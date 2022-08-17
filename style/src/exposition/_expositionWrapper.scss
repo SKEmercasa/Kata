@@ -1,0 +1,6 @@
+@import '../../components/var/var';
+@import '../../components/mixin/resetMarginH1';
+
+.reset-margin--h1 {
+    @include reset-margin--h1($reset-margin--h1);
+}

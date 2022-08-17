@@ -1,0 +1,78 @@
+@import '../../components/var/var';
+@import '../../components/mixin/flex';
+@import '../../components/pieces/icon';
+@import '../../components/mixin/marginIcon';
+
+body {
+    margin: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    height: 88px;
+
+    @media (min-width: 1119.98px) {
+        display: none;
+    }
+
+    & {
+        nav:first-child {
+            width: $width-header;
+            @include flex($flex, $just-con);
+
+            @media (max-width: 767.98px) {
+                width: 57vw;
+
+                & hr {
+                    display: none;
+                }
+            }
+        }
+
+        nav:nth-child(2) {
+            width: $width-header;
+            @include flex($flex: flex, $just-con: right);
+
+            @media (max-width: 767.98px) {
+                @include flex($flex: none, $just-con: right);
+            }
+        }
+
+        nav:nth-child(3) {
+            width: 138px;
+            @include flex($flex: flex, $just-con: right);
+
+            @media (max-width: 767.98px) {
+                width: 43vw;
+            }
+        }
+
+        nav {
+            .decorative-imitation-separator {
+                height: 31px;
+                border-bottom: 0;
+                border-left: $border-separator;
+                border-right: $border-separator;
+                opacity: 0.3;
+                @include margin-icon($margin-horizont);
+            }
+
+            .logo-CPS {
+                @include margin-icon($margin-horizont);
+            }
+        }
+    }
+}
+
+.icon--decor {
+    @extend %icon-button;
+    @include margin-icon($margin-horizont);
+
+    &.margin--left {
+        margin-left: 16px;
+    }
+
+    &.margin--right {
+        margin-right: 16px;
+    }
+}
