@@ -17,7 +17,7 @@
     margin-left: 16px;
     margin-right: 16px;
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         margin-bottom: 40px;
     }
 }
@@ -28,6 +28,13 @@
     list-style-type: none;
     @include flex($flex, $just-con);
     flex-wrap: wrap;
+
+    @media (min-width: 1120px) {
+        @include flex($flex, $just-con: space-between);
+    }
+        @media (min-width: 1264px) {
+            justify-content: left;
+        }
 }
 
 .brend-item {
@@ -37,8 +44,17 @@
     margin-bottom: 16px;
     border: 0.2px solid rgba(128, 128, 128, 0.2);
     border-radius: 5px;
-
     @include flex($flex, $just-con: center);
+
+    @media (min-width: 1016px) {
+        &:nth-child(7) {
+            display: flex;
+        }
+
+        &:nth-child(8) {
+            display: flex;
+        }
+    }
 
     & .brend-item__wrapper {
         width: 100%;
@@ -52,5 +68,13 @@
             @extend %icon-arrow;
             margin-right: 16px;
         }
+    }
+}
+
+.hidden--768 {
+    display: none;
+
+    @media (min-width: 1264px) {
+        display: flex;
     }
 }
