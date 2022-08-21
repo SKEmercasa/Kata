@@ -1,0 +1,182 @@
+@import '../../components/var/var';
+@import '../../components/mixin/resetMarginH1';
+@import '../../components/mixin/flex';
+
+.exposition__header {
+    @include flex($flex, $just-con: space-between);
+
+    @media (min-width: 1119.98px) {
+        margin-top: 18px;
+        margin-right: 22px;
+    }
+}
+
+.exposition__menu {
+    @include flex($flex, $just-con);
+    margin-top: $margin-top--mobile;
+    font-family: 'TT Lakes-Medium';
+    font-size: 16px;
+
+    @media (max-width: 1119.98px) {
+        @include flex($flex: none, $just-con: right);
+    }
+}
+
+.reset-margin--h1 {
+    @include reset-margin--h1($reset-margin--h1);
+}
+
+.is-header:before {
+    content: "";
+    width: 4px;
+    height: 1.4em;
+    align-self: center;
+    margin-right: 12px;
+    background-color: #41F6D7;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    @media (min-width: 1119.98px) {
+        margin-right: 30px;
+
+    }
+}
+
+.is-header {
+    display: flex;
+    font-family: 'TT Lakes-Bold';
+    font-weight: normal;
+    font-size: 28px;
+    margin-top: $margin-top--mobile;
+}
+
+.block-icon {
+    @include flex($flex, $just-con);
+
+    & p {
+        margin: $margin-horizont;
+        margin-left: 22px;
+    }
+}
+
+.exposition__navigation {
+    overflow-x: scroll;
+    margin-right: $margin16;
+}
+
+.exposition__group-items {
+    display: flex;
+    width: max-content;
+    padding: 0;
+    margin-top: $margin24;
+    margin-bottom: $margin24;
+
+    @media (min-width: 1119.98px) {
+        width: auto;
+        flex-wrap: wrap;
+        margin-bottom: $margin16;
+    }
+}
+
+.exposition__wrapper-item {
+    height: 40px;
+    margin-left: $margin16;
+    list-style-type: none;
+}
+
+.exposition--item {
+    border: #41F6D7 solid 1px;
+    border-radius: 5px;
+    height: 38px;
+}
+
+.exposition__item {
+    display: block;
+    margin: 8px 0.5em 8px 0.5em;
+    height: 22px;
+    font-family: 'TT Lakes-Medium';
+    font-size: 16px;
+    color: #7E7E82;
+}
+
+.exposition--height-text {
+    margin: 7px 0.5em 7px 0.5em;
+}
+
+.exposition__content {
+    font-size: 14px;
+    font-family: 'TT Lakes-Normal';
+    margin-top: $margin16;
+
+    @media (min-width: 768px) {
+        display: flex;
+
+        .exposition__wrapper {
+            width: 50%;
+        }
+    }
+
+    @media (min-width: 1119.98px) {
+        margin-top: 0;
+    }
+}
+
+.exposition__description {
+    margin-left: $margin16;
+    margin-right: $margin16;
+    letter-spacing: 0.2px;
+}
+
+.exposition__button-full-discription {
+    margin: $margin16 $margin16 0 $margin16;
+}
+
+.button--full-discription {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: inherit;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'TT Lakes-Medium';
+
+    &:before {
+        content: '';
+        width: 32px;
+        height: 16px;
+        font-size: 16px;
+        background-image: url(../../../img/expand.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.exposition__discription--part-two {
+    @include flex($flex: none, $just-con: right);
+
+    @media (min-width: 768px) {
+        display: $inline;
+    }
+}
+
+.exposition__discription--part-three {
+    @include flex($flex: none, $just-con: right);
+
+    @media (min-width: 1120.98px) {
+        display: $inline;
+    }
+}
+
+.exposition__signboard {
+    margin: 16px 0 0 0;
+
+    @media (min-width: 768px) {
+        margin: 0 $margin16 0 $margin16;
+    }
+}
+
+.signboard {
+    width: 100%;
+    height: inherit;
+}

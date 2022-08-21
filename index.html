@@ -10,28 +10,167 @@
 </head>
 
 <body>
-    <header class="header-wrapper">
-        <nav class="header-wrapper__nav">
+    <div class="header">
+        <nav class="header__nav">
             <button class="icon-burger icon--decor margin--left"></button>
             <hr class="decorative-imitation-separator">
             <img class="logo-CPS" src="./img/logo.svg" alt="logo">
         </nav>
-        <nav class="header-wrapper__nav">
+        <nav class="header__nav">
             <button class="icon-call icon--decor"></button>
             <button class="icon-chat icon--decor"></button>
             <button class="icon-profile icon--decor"></button>
         </nav>
-        <nav class="header-wrapper__nav">
+        <nav class="header__nav">
             <hr class="decorative-imitation-separator">
             <button class="icon-setting icon--decor"></button>
             <button class="icon-search icon--decor margin--right"></button>
         </nav>
-    </header>
-    <main class="exposition-wrapper">
-        <header class="exposition-wrapper__header">
-            <h1 class="is-header reset-margin--h1">Услуги и сервисы</h1>           
+    </div>
+    <div class="exposition">
+        <header class="exposition__header">
+            <h1 class="is-header reset-margin--h1">Услуги и сервисы</h1>
+            <div class="exposition__menu">
+                <label class="block-icon">
+                    <p>Оставить заявку</p>
+                    <input class="icon-setting icon--decor" name="feed" type="button">
+                </label>
+                <label class="block-icon" for="status">
+                    <p>Статус ремонта</p>
+                    <input class="icon-search icon--decor" name="status" type="button">
+                </label>
+            </div>
         </header>
-    </main>
+        <nav class="exposition__navigation">
+            <ul class="exposition__group-items">
+                <li class="exposition__wrapper-item exposition--item">
+                    <a class="exposition__item exposition--height-text">Ремонтируемые бренды</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Ремонтируемые устройства</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Дополнительные услуги</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Цены на услуги</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Адреса сервисных центров</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Специальные цены</a>
+                </li>
+                <li class="exposition__wrapper-item">
+                    <a class="exposition__item">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+        <article class="exposition__content">
+            <div class="exposition__wrapper">
+                <div class="exposition__description">
+                    <section class="exposition__discription--part-one">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                        у нас вы можете отремонтировать свой
+                        ноутбук Dell с официальной гарантией производителя.
+                    </section>
+                    <div class="exposition--space">
+                        <p></p>
+                    </div>
+                    <section class="exposition__discription--part-two">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                    </section>
+                    <section class="exposition__discription--part-three">
+                        , что подтверждает большое количествопостоянных клиентов. Мы гордимся тем, что к нам обращаются
+                        по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    </section>
+                </div>
+                <div class="exposition__button-full-discription">
+                    <button class="button--full-discription">
+                        Читать далее
+                    </button>
+                </div>
+            </div>
+            <div class="exposition__wrapper">
+                <figure class="exposition__signboard">
+                    <img class="signboard" src="./img/pictureCPS.jpg" alt="signboard">
+                </figure>
+            </div>
+        </article>
+    </div>
+    <div class="by-brend">
+        <header class="by-brend__header">
+            Ремонт техники различных брендов
+        </header>
+        <ul class="by-brend__list">
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-lenovo.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-samsung.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-apple.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-bosch.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-hp.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-acer.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-sony.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-sonic.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-lenovo.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-samsung.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+            <li class="brend-item">
+                <label class="brend-item__wrapper">
+                    <img src="./img/brend/B-apple.png" alt="brend">
+                    <input class="icon-arrow icon--arrow" type="button">
+                </label>
+            </li>
+        </ul>
+    </div>
 
 </body>
 

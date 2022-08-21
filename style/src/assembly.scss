@@ -1,2 +1,22 @@
-@import './header/headerWrapper';
-@import './exposition/expositionWrapper';
+@import './header/header';
+@import './exposition/exposition';
+@import './byBrend/byBrend';
+
+@font-face {
+    font-family: 'TT Lakes-Bold';
+    src: url(../../font/TTLakes-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'TT Lakes-Normal';
+    src: url(../../font/TTLakes-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'TT Lakes-Medium';
+    src: url(../../font/TTLakes-Medium.ttf);
+}
+
+body {
+    margin: 0;
+}

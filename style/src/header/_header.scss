@@ -3,11 +3,7 @@
 @import '../../components/pieces/icon';
 @import '../../components/mixin/marginIcon';
 
-body {
-    margin: 0;
-}
-
-.header-wrapper {
+.header {
     display: flex;
     height: 88px;
 

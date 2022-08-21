@@ -9,6 +9,16 @@
   border: 0;
 }
 
+.brend-item .brend-item__wrapper .icon--arrow {
+  width: 40px;
+  height: 40px;
+  background-color: inherit;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #FF3E79;
+}
+
 .icon-setting {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m8.258 13.458.409-.409-1.717-1.717-.409.41-.204-.205c-.327-.368-.654-.573-.981-.532-.246 0-.45.164-.613.409-.246.409-.123.859-.082 1.145 0 .082.04.123.04.204 0 .123 0 .286-.285.327-.41.123-.94.246-1.472.532-.736.409-1.226.777-1.512 1.145C-.081 16.729 0 18.406 0 18.487c0 .123.04.205.122.246l1.104 1.144c.082.082.164.123.245.123h.123c.409 0 1.88-.082 3.597-1.431.368-.286.736-.777 1.145-1.513.286-.49.45-1.022.531-1.472.082-.286.205-.286.327-.286.041 0 .123.041.205.041.163.04.327.082.531.082.204 0 .409-.041.613-.164.245-.163.409-.368.45-.613.04-.327-.123-.654-.49-.94l-.246-.246ZM16.884 4.878l1.135-.552c.042-.042.126-.085.168-.127l1.723-2.337c.126-.17.126-.425-.042-.553L18.691.12c-.126-.127-.378-.17-.546-.042l-2.312 1.742a.588.588 0 0 0-.126.17l-.546 1.147L11 7.216 12.765 9l4.119-4.122Z' fill='%23fff'/%3E%3Cpath d='M17.853 13.045c-.99-1.041-2.414-1.416-3.759-1.041l-6.449-6.83c.08-.376.119-.709.119-1.084a4.184 4.184 0 0 0-1.147-2.873 3.696 3.696 0 0 0-3.996-1 .542.542 0 0 0-.238.333c0 .125.04.25.119.375l1.939 2.041c.435.458.435 1.25 0 1.708a1.129 1.129 0 0 1-1.622 0L.879 2.633c-.118-.084-.236-.125-.395-.084-.118 0-.237.125-.277.25-.474 1.458-.118 3.082.91 4.165.712.791 1.741 1.208 2.77 1.208.316 0 .672-.042.989-.125l6.488 6.83a4.339 4.339 0 0 0 .99 3.957A3.668 3.668 0 0 0 15.083 20c.434 0 .83-.083 1.265-.208a.491.491 0 0 0 .277-.292.346.346 0 0 0-.119-.375l-1.938-2.04a1.332 1.332 0 0 1-.356-.875c0-.333.119-.625.356-.875s.514-.374.83-.374c.317 0 .594.124.832.374l1.938 2.041a.617.617 0 0 0 .356.125c.119-.042.238-.125.277-.25A4.92 4.92 0 0 0 19 15.918c0-1.082-.396-2.124-1.147-2.873Z' fill='%23fff'/%3E%3C/svg%3E");
 }
@@ -33,59 +43,58 @@
 .icon-search-nav {
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5 11h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34A6.505 6.505 0 0 0 .05 7.32c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.26 4.25c.41.41 1.07.41 1.48 0l.01-.01c.41-.41.41-1.07 0-1.48L12.5 11Zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11Z' fill='%23fff'/%3E%3C/svg%3E");
 }
-
-body {
-  margin: 0;
+.icon-arrow {
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.5 6 .707 2.207a1 1 0 0 1 0-1.414L.793.707a1 1 0 0 1 1.414 0l4.586 4.586a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-.086-.086a1 1 0 0 1 0-1.414L4.5 6Z' fill='%23FF3E79'/%3E%3C/svg%3E");
 }
 
-.header-wrapper {
+.header {
   display: flex;
   height: 88px;
 }
 @media (min-width: 1119.98px) {
-  .header-wrapper {
+  .header {
     display: none;
   }
 }
-.header-wrapper nav:first-child {
+.header nav:first-child {
   width: calc(50% - 69px);
   display: flex;
   justify-content: left;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header-wrapper nav:first-child {
+  .header nav:first-child {
     width: 57vw;
   }
-  .header-wrapper nav:first-child hr {
+  .header nav:first-child hr {
     display: none;
   }
 }
-.header-wrapper nav:nth-child(2) {
+.header nav:nth-child(2) {
   width: calc(50% - 69px);
   display: flex;
   justify-content: right;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header-wrapper nav:nth-child(2) {
+  .header nav:nth-child(2) {
     display: none;
     justify-content: right;
     align-items: center;
   }
 }
-.header-wrapper nav:nth-child(3) {
+.header nav:nth-child(3) {
   width: 138px;
   display: flex;
   justify-content: right;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header-wrapper nav:nth-child(3) {
+  .header nav:nth-child(3) {
     width: 43vw;
   }
 }
-.header-wrapper nav .decorative-imitation-separator {
+.header nav .decorative-imitation-separator {
   height: 31px;
   border-bottom: 0;
   border-left: 0.5px solid gray;
@@ -93,7 +102,7 @@ body {
   opacity: 0.3;
   margin: 0 8px 0 8px;
 }
-.header-wrapper nav .logo-CPS {
+.header nav .logo-CPS {
   margin: 0 8px 0 8px;
 }
 
@@ -107,6 +116,276 @@ body {
   margin-right: 16px;
 }
 
+.exposition__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1119.98px) {
+  .exposition__header {
+    margin-top: 18px;
+    margin-right: 22px;
+  }
+}
+
+.exposition__menu {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 24px;
+  font-family: "TT Lakes-Medium";
+  font-size: 16px;
+}
+@media (max-width: 1119.98px) {
+  .exposition__menu {
+    display: none;
+    justify-content: right;
+    align-items: center;
+  }
+}
+
 .reset-margin--h1 {
+  margin: 0;
+}
+
+.is-header:before {
+  content: "";
+  width: 4px;
+  height: 1.4em;
+  align-self: center;
+  margin-right: 12px;
+  background-color: #41F6D7;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+@media (min-width: 1119.98px) {
+  .is-header:before {
+    margin-right: 30px;
+  }
+}
+
+.is-header {
+  display: flex;
+  font-family: "TT Lakes-Bold";
+  font-weight: normal;
+  font-size: 28px;
+  margin-top: 24px;
+}
+
+.block-icon {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.block-icon p {
+  margin: 0 8px 0 8px;
+  margin-left: 22px;
+}
+
+.exposition__navigation {
+  overflow-x: scroll;
+  margin-right: 16px;
+}
+
+.exposition__group-items {
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+@media (min-width: 1119.98px) {
+  .exposition__group-items {
+    width: auto;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+}
+
+.exposition__wrapper-item {
+  height: 40px;
+  margin-left: 16px;
+  list-style-type: none;
+}
+
+.exposition--item {
+  border: #41F6D7 solid 1px;
+  border-radius: 5px;
+  height: 38px;
+}
+
+.exposition__item {
+  display: block;
+  margin: 8px 0.5em 8px 0.5em;
+  height: 22px;
+  font-family: "TT Lakes-Medium";
+  font-size: 16px;
+  color: #7E7E82;
+}
+
+.exposition--height-text {
+  margin: 7px 0.5em 7px 0.5em;
+}
+
+.exposition__content {
+  font-size: 14px;
+  font-family: "TT Lakes-Normal";
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .exposition__content {
+    display: flex;
+  }
+  .exposition__content .exposition__wrapper {
+    width: 50%;
+  }
+}
+@media (min-width: 1119.98px) {
+  .exposition__content {
+    margin-top: 0;
+  }
+}
+
+.exposition__description {
+  margin-left: 16px;
+  margin-right: 16px;
+  letter-spacing: 0.2px;
+}
+
+.exposition__button-full-discription {
+  margin: 16px 16px 0 16px;
+}
+
+.button--full-discription {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  background-color: inherit;
+  padding: 0;
+  font-size: 16px;
+  font-family: "TT Lakes-Medium";
+}
+.button--full-discription:before {
+  content: "";
+  width: 32px;
+  height: 16px;
+  font-size: 16px;
+  background-image: url(../../../img/expand.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.exposition__discription--part-two {
+  display: none;
+  justify-content: right;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .exposition__discription--part-two {
+    display: inline;
+  }
+}
+
+.exposition__discription--part-three {
+  display: none;
+  justify-content: right;
+  align-items: center;
+}
+@media (min-width: 1120.98px) {
+  .exposition__discription--part-three {
+    display: inline;
+  }
+}
+
+.exposition__signboard {
+  margin: 16px 0 0 0;
+}
+@media (min-width: 768px) {
+  .exposition__signboard {
+    margin: 0 16px 0 16px;
+  }
+}
+
+.signboard {
+  width: 100%;
+  height: inherit;
+}
+
+.by-brend {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+  .by-brend {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.by-brend__header {
+  font-family: "TT Lakes-Normal";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #7E7E82;
+  margin-bottom: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+@media (min-width: 768px) {
+  .by-brend__header {
+    margin-bottom: 40px;
+  }
+}
+
+.by-brend__list {
+  padding-left: 0;
+  margin: 0 16px 0 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brend-item {
+  width: 232px;
+  height: 72px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  border: 0.2px solid rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brend-item .brend-item__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brend-item .brend-item__wrapper img {
+  margin-left: 16px;
+}
+.brend-item .brend-item__wrapper .icon--arrow {
+  margin-right: 16px;
+}
+
+@font-face {
+  font-family: "TT Lakes-Bold";
+  src: url(../../font/TTLakes-Bold.ttf);
+}
+@font-face {
+  font-family: "TT Lakes-Normal";
+  src: url(../../font/TTLakes-Regular.ttf);
+}
+@font-face {
+  font-family: "TT Lakes-Medium";
+  src: url(../../font/TTLakes-Medium.ttf);
+}
+body {
   margin: 0;
 }/*# sourceMappingURL=assembly.css.map */
