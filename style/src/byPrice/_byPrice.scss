@@ -1,0 +1,23 @@
+.by-price {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    @media (min-width: 768px) {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.by-price__header {
+    font-family: 'TT Lakes-Normal';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media (min-width: 768px) {
+        margin-bottom: 40px;
+    }
+}
