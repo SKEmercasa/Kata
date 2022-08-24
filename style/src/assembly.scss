@@ -3,6 +3,7 @@
 @import './byBrend/byBrend';
 @import './bySoft/bySoft';
 @import './byPrice/byPrice';
+@import './byPriceOwn/byProceOwn';
 
 @font-face {
     font-family: 'TT Lakes-Bold';
@@ -21,4 +22,5 @@
 
 body {
     margin: 0;
+    background-color: #f8f8f8;
 }
