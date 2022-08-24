@@ -506,6 +506,7 @@
 .by-price {
   margin-top: 32px;
   margin-bottom: 32px;
+  background-color: #f8f8f8;
 }
 @media (min-width: 768px) {
   .by-price {
@@ -527,6 +528,52 @@
   .by-price__header {
     margin-bottom: 40px;
   }
+}
+
+.price-table {
+  margin-left: 16px;
+  margin-right: 16px;
+  background-color: #ffffff;
+}
+
+.table__point {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "TT Lakes-Medium";
+}
+
+.table__list {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: "TT Lakes-Normal";
+}
+
+.item-point--wrapper:first-child {
+  width: calc(40% - 16px);
+  margin-left: 16px;
+}
+
+.item-point--wrapper:nth-child(4) {
+  justify-content: right;
+  margin-right: 16px;
+}
+
+.item-point--wrapper {
+  width: 20%;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.item--color {
+  color: #7E7E82;
+}
+
+.item--height {
+  height: 63px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
 @font-face {
