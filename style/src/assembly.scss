@@ -1,9 +1,17 @@
-@import './header/header';
-@import './exposition/exposition';
-@import './byBrend/byBrend';
-@import './bySoft/bySoft';
-@import './byPrice/byPrice';
-@import './byPriceOwn/byProceOwn';
+
+@import '../components/var/var';
+@import '../components/mixin/resetMarginH1';
+@import '../components/mixin/flex';
+@import '../components/pieces/icon';
+@import '../components/mixin/marginIcon';
+@import './header';
+@import './exposition';
+@import './byBrend';
+@import './bySoft';
+@import './byPrice';
+@import './byPriceOwn';
+@import './footer';
+@import './menu';
 
 @font-face {
     font-family: 'TT Lakes-Bold';
@@ -23,4 +31,9 @@
 body {
     margin: 0;
     background-color: #f8f8f8;
+    display: flex;
+}
+
+.wrapper-right-main {
+    width: 100vw;
 }

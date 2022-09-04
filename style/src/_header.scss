@@ -1,13 +1,8 @@
-@import '../../components/var/var';
-@import '../../components/mixin/flex';
-@import '../../components/pieces/icon';
-@import '../../components/mixin/marginIcon';
-
 .header {
     display: flex;
     height: 88px;
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1439.98px) {
         display: none;
     }
 
@@ -50,14 +45,15 @@
                 border-left: $border-separator;
                 border-right: $border-separator;
                 opacity: 0.3;
-                @include margin-icon($margin-horizont);
-            }
-
-            .logo-CPS {
+                z-index: 0.5;
                 @include margin-icon($margin-horizont);
             }
         }
     }
+}
+
+.logo-CPS {
+    @include margin-icon($margin-horizont);
 }
 
 .icon--decor {

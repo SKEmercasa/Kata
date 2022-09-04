@@ -1,11 +1,7 @@
-@import '../../components/var/var';
-@import '../../components/mixin/resetMarginH1';
-@import '../../components/mixin/flex';
-
 .exposition__header {
     @include flex($flex, $just-con: space-between);
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1439.98px) {
         margin-top: 18px;
         margin-right: 22px;
     }
@@ -17,7 +13,7 @@
     font-family: 'TT Lakes-Medium';
     font-size: 16px;
 
-    @media (max-width: 1119.98px) {
+    @media (max-width: 1439.98px) {
         @include flex($flex: none, $just-con: right);
     }
 }
@@ -36,7 +32,7 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1439.98px) {
         margin-right: 30px;
 
     }
@@ -71,7 +67,7 @@
     margin-top: $margin24;
     margin-bottom: $margin24;
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1100px) {
         width: auto;
         flex-wrap: wrap;
         margin-bottom: $margin16;
@@ -116,7 +112,7 @@
         }
     }
 
-    @media (min-width: 1119.98px) {
+    @media (min-width: 1439.98px) {
         margin-top: 0;
     }
 }
@@ -163,7 +159,7 @@
 .exposition__discription--part-three {
     @include flex($flex: none, $just-con: right);
 
-    @media (min-width: 1120.98px) {
+    @media (min-width: 1440px) {
         display: $inline;
     }
 }

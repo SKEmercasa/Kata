@@ -1,0 +1,143 @@
+.menu {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    transition: transform 1.5s;
+    z-index: 1;
+
+    @media (max-width: 767.98px) {
+        display: block;
+        position: absolute;
+        background-color: #ffffff;
+        transform: translate(-100vw);
+    }
+
+    @media (min-width: 768px) and (max-width: 1439.98px) {
+        display: block;
+        position: absolute;
+        background-color: #ffffff;
+        transform: translate(-360px);
+        width: 360px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 320px;
+        transform: translate(0px);
+    }
+}
+
+.menu__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 11vh;
+}
+
+.menu__header {
+    @include flex($flex, $just-con: space-between);
+    margin: 0 8px 0 8px;
+    width: 100vw;
+    height: 88px;
+}
+
+.menu__nav {
+    min-height: 60vh;
+}
+
+.left-header {
+    @include flex($flex, $just-con: space-between);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.list--normal {
+    padding: 0;
+    margin-top: 0;
+}
+
+.item {
+    font-family: 'TT Lakes-Medium';
+    margin-bottom: 24px;
+    margin-left: 16px;
+    list-style: none;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.item:hover {
+    filter: blur(2px);
+    color: black;
+}
+
+.item--active {
+    color: #7E7E82;
+    margin-left: 0;
+}
+
+.item--active::before {
+    content: "";
+    width: 2px;
+    height: 32px;
+    margin-right: 14px;
+    background-color: #41F6D7;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.menu__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 29vh;
+    margin-left: 8px;
+}
+
+.panel__mail {
+    margin-left: 8px;
+    margin-top: 16px;
+}
+
+.panel__link {
+    text-decoration: none;
+    color: black;
+}
+
+.tel--link {
+    font-family: 'TT Lakes-Bold';
+    font-size: 1.2em;
+}
+
+.language-bar {
+    margin-top: 50px;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.language-bar__item {
+    margin-right: 7px;
+    font-family: 'TT Lakes-Medium';
+    border: 0;
+    background-color: inherit;
+    font-size: 16px;
+    padding: 0;
+}
+
+.language-bar__item--active {
+    color: #7E7E82;
+}
+
+.mail--link {
+    font-family: 'TT Lakes-Medium';
+}
+
+.icon-burger-cancel {
+    @media (min-width: 1440px) {
+        display: none;
+    }
+}

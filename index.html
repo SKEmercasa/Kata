@@ -10,302 +10,363 @@
 </head>
 
 <body>
-    <div class="header">
-        <nav class="header__nav">
-            <button class="icon-burger icon--decor margin--left"></button>
-            <hr class="decorative-imitation-separator">
-            <img class="logo-CPS" src="./img/logo.svg" alt="logo">
-        </nav>
-        <nav class="header__nav">
-            <button class="icon-call icon--decor"></button>
-            <button class="icon-chat icon--decor"></button>
-            <button class="icon-profile icon--decor"></button>
-        </nav>
-        <nav class="header__nav">
-            <hr class="decorative-imitation-separator">
-            <button class="icon-setting icon--decor"></button>
-            <button class="icon-search icon--decor margin--right"></button>
-        </nav>
-    </div>
-    <div class="exposition">
-        <header class="exposition__header">
-            <h1 class="is-header reset-margin--h1">Услуги и сервисы</h1>
-            <div class="exposition__menu">
-                <label class="block-icon">
-                    <p>Оставить заявку</p>
-                    <input class="icon-setting icon--decor" name="feed" type="button">
-                </label>
-                <label class="block-icon" for="status">
-                    <p>Статус ремонта</p>
-                    <input class="icon-search icon--decor" name="status" type="button">
-                </label>
-            </div>
-        </header>
-        <nav class="exposition__navigation">
-            <ul class="exposition__group-items">
-                <li class="exposition__wrapper-item exposition--item">
-                    <a class="exposition__item exposition--height-text">Ремонтируемые бренды</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Ремонтируемые устройства</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Дополнительные услуги</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Цены на услуги</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Адреса сервисных центров</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Специальные цены</a>
-                </li>
-                <li class="exposition__wrapper-item">
-                    <a class="exposition__item">Отзывы</a>
-                </li>
-            </ul>
-        </nav>
-        <article class="exposition__content">
-            <div class="exposition__wrapper">
-                <div class="exposition__description">
-                    <section class="exposition__discription--part-one">
-                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
-                        у нас вы можете отремонтировать свой
-                        ноутбук Dell с официальной гарантией производителя.
-                    </section>
-                    <div class="exposition--space">
-                        <p></p>
+    <div class="wrapper-left-main">
+        <div class="menu">
+            <div class="menu__wrapper">
+                <header class="menu__header">
+                    <div class="left-header">
+                        <button class="icon-burger-cancel icon--decor"></button>
+                        <img class="logo-CPS" src="./img/logo.svg" alt="logo-CPS">
                     </div>
-                    <section class="exposition__discription--part-two">
-                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                    <div class="right-header">
+                        <button class="icon-search-menu icon--decor"></button>
+                    </div>
+                </header>
+            </div>
+            <nav class="menu__nav">
+                <ul class="menu__list list--normal">
+                    <li class="item item--active">Ремонт техники</li>
+                    <li class="item">Услуги и сервисы</li>
+                    <li class="item">Корпоративным клиентам</li>
+                    <li class="item">Продавцам техники</li>
+                    <li class="item">Партнерам</li>
+                    <li class="item">Производителям</li>
+                    <li class="item">Наши сервисные центры</li>
+                    <li class="item">Контакты</li>
+                </ul>
+            </nav>
+            <footer class="menu__footer">
+                <div class="contacts">
+                    <div class="panel">
+                        <button class="icon-call icon--decor"></button>
+                        <button class="icon-chat icon--decor"></button>
+                        <button class="icon-profile icon--decor"></button>
+                    </div>
+                    <section class="panel__mail">
+                        <a class="panel__link mail--link" href="mailto: mail@cps.com">mail@cps.com</a>
                     </section>
-                    <section class="exposition__discription--part-three">
-                        , что подтверждает большое количествопостоянных клиентов. Мы гордимся тем, что к нам обращаются
-                        по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                    <section class="panel__mail">
+                        <a class="panel__link tel--link" href="tel: +8 800 890 8900">8 800 890 8900</a>
                     </section>
                 </div>
-                <div class="exposition--button-full-discription">
-                    <button class="button--full-discription">
-                        Читать далее
+                <div class="language-bar list--normal">
+                    <button class="language-bar__item language-bar__item--active">
+                        RU
+                    </button>
+                    <button class="language-bar__item">
+                        EN
+                    </button>
+                    <button class="language-bar__item">
+                        CH
                     </button>
                 </div>
-            </div>
-            <div class="exposition__wrapper">
-                <figure class="exposition__signboard">
-                    <img class="signboard" src="./img/pictureCPS.jpg" alt="signboard">
-                </figure>
-            </div>
-        </article>
-    </div>
-    <div class="by-brend">
-        <header class="by-brend__header">
-            Ремонт техники различных брендов
-        </header>
-        <ul class="by-brend__list">
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-lenovo.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-samsung.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-apple.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-bosch.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-hp.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-acer.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item hidden--768">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-sony.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item hidden--768">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-sonic.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item hidden--768">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-lenovo.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item hidden--768">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-samsung.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-            <li class="brend-item hidden--768">
-                <label class="brend-item__wrapper">
-                    <img src="./img/brend/B-apple.png" alt="brend">
-                    <input class="icon-arrow icon--arrow" type="button">
-                </label>
-            </li>
-        </ul>
-        <div class="brend--button-full-discription">
-            <button class="button--full-discription">
-                Показать всё
-            </button>
+            </footer>
         </div>
     </div>
-    <div class="by-soft">
-        <header class="by-soft__header">
-            Ремонт различных видов техники
-        </header>
-        <ul class="by-soft__list">
-            <li class="soft-item">
-                <label class="soft-item__wrapper">
-                    <div class="soft-container">
-                        Ремонт ноутбуков
-                    </div>
-                    <div class="soft-container">
-                        <input class="icon-arrow icon--arrow" type="button">
-                    </div>
-                </label>
-            </li>
-            <li class="soft-item">
-                <label class="soft-item__wrapper">
-                    <div class="soft-container">
-                        Ремонт планшетов
-                    </div>
-                    <div class="soft-container">
-                        <input class="icon-arrow icon--arrow" type="button">
-                    </div>
-                </label>
-            </li>
-            <li class="soft-item">
-                <label class="soft-item__wrapper">
-                    <div class="soft-container">
-                        Ремонт ПК
-                    </div>
-                    <div class="soft-container">
-                        <input class="icon-arrow icon--arrow" type="button">
-                    </div>
-                </label>
-            </li>
-            <li class="soft-item">
-                <label class="soft-item__wrapper">
-                    <div class="soft-container">
-                        Ремонт мониторов
-                    </div>
-                    <div class="soft-container">
-                        <input class="icon-arrow icon--arrow" type="button">
-                    </div>
-                </label>
-            </li>
-        </ul>
-        <div class="soft--button-full-discription">
-            <button class="button--full-discription">
-                Показать всё
-            </button>
+    <div class="wrapper-right-main">
+        <div class="header">
+            <nav class="header__nav">
+                <button class="icon-burger icon--decor margin--left"></button>
+                <hr class="decorative-imitation-separator">
+                <img class="logo-CPS" src="./img/logo.svg" alt="logo">
+            </nav>
+            <nav class="header__nav">
+                <button class="icon-call icon--decor"></button>
+                <button class="icon-chat icon--decor"></button>
+                <button class="icon-profile icon--decor"></button>
+            </nav>
+            <nav class="header__nav">
+                <hr class="decorative-imitation-separator">
+                <button class="icon-setting icon--decor"></button>
+                <button class="icon-search icon--decor margin--right"></button>
+            </nav>
         </div>
-    </div>
-    <div class="by-price">
-        <header class="by-price__header">
-            <p>цены на услуги</p>
-        </header>
-        <div class="price-table">
-            <div class="table__point">
-                <div class="item-point--wrapper">
-                    <p class="item-point item--color">Ремонтные услуги</p>
+        <div class="exposition">
+            <header class="exposition__header">
+                <h1 class="is-header reset-margin--h1">Услуги и сервисы</h1>
+                <div class="exposition__menu">
+                    <label class="block-icon">
+                        <p>Оставить заявку</p>
+                        <input class="icon-setting icon--decor" name="feed" type="button">
+                    </label>
+                    <label class="block-icon" for="status">
+                        <p>Статус ремонта</p>
+                        <input class="icon-search icon--decor" name="status" type="button">
+                    </label>
                 </div>
-                <div class="item-point--wrapper">
-                    <p class="item-point item--color">Цена</p>
+            </header>
+            <nav class="exposition__navigation">
+                <ul class="exposition__group-items">
+                    <li class="exposition__wrapper-item exposition--item">
+                        <a class="exposition__item exposition--height-text">Ремонтируемые бренды</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Ремонтируемые устройства</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Дополнительные услуги</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Цены на услуги</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Адреса сервисных центров</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Специальные цены</a>
+                    </li>
+                    <li class="exposition__wrapper-item">
+                        <a class="exposition__item">Отзывы</a>
+                    </li>
+                </ul>
+            </nav>
+            <article class="exposition__content">
+                <div class="exposition__wrapper">
+                    <div class="exposition__description">
+                        <section class="exposition__discription--part-one">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только
+                            у нас вы можете отремонтировать свой
+                            ноутбук Dell с официальной гарантией производителя.
+                        </section>
+                        <div class="exposition--space">
+                            <p></p>
+                        </div>
+                        <section class="exposition__discription--part-two">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                        </section>
+                        <section class="exposition__discription--part-three">
+                            , что подтверждает большое количествопостоянных клиентов. Мы гордимся тем, что к нам
+                            обращаются
+                            по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </section>
+                    </div>
+                    <div class="exposition--button-full-discription">
+                        <button class="button--full-discription">
+                            Читать далее
+                        </button>
+                    </div>
                 </div>
-                <div class="item-point--wrapper item--color">
-                    <p class="item-point">Срок</p>
+                <div class="exposition__wrapper">
+                    <figure class="exposition__signboard">
+                        <img class="signboard" src="./img/pictureCPS.jpg" alt="signboard">
+                    </figure>
                 </div>
-                <div class="item-point--wrapper item--color"></div>
+            </article>
+        </div>
+        <div class="by-brend">
+            <header class="by-brend__header">
+                Ремонт техники различных брендов
+            </header>
+            <ul class="by-brend__list">
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-lenovo.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-samsung.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-apple.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-bosch.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-hp.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-acer.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item hidden--768">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-sony.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item hidden--768">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-sonic.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item hidden--768">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-lenovo.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item hidden--768">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-samsung.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+                <li class="brend-item hidden--768">
+                    <label class="brend-item__wrapper">
+                        <img src="./img/brend/B-apple.png" alt="brend">
+                        <input class="icon-arrow icon--arrow" type="button">
+                    </label>
+                </li>
+            </ul>
+            <div class="brend--button-full-discription">
+                <button class="button--full-discription">
+                    Показать всё
+                </button>
             </div>
-            <div class="table__list">
-                <div class="item-point--wrapper item--height">Диагностика</div>
-                <div class="item-point--wrapper item--height">Бесплатно</div>
-                <div class="item-point--wrapper item--height">30 мин</div>
-                <div class="item-point--wrapper item--height">
-                    <button class="price--order">заказать</button>
-                </div>
+        </div>
+        <div class="by-soft">
+            <header class="by-soft__header">
+                Ремонт различных видов техники
+            </header>
+            <ul class="by-soft__list">
+                <li class="soft-item">
+                    <label class="soft-item__wrapper">
+                        <div class="soft-container">
+                            Ремонт ноутбуков
+                        </div>
+                        <div class="soft-container">
+                            <input class="icon-arrow icon--arrow" type="button">
+                        </div>
+                    </label>
+                </li>
+                <li class="soft-item">
+                    <label class="soft-item__wrapper">
+                        <div class="soft-container">
+                            Ремонт планшетов
+                        </div>
+                        <div class="soft-container">
+                            <input class="icon-arrow icon--arrow" type="button">
+                        </div>
+                    </label>
+                </li>
+                <li class="soft-item">
+                    <label class="soft-item__wrapper">
+                        <div class="soft-container">
+                            Ремонт ПК
+                        </div>
+                        <div class="soft-container">
+                            <input class="icon-arrow icon--arrow" type="button">
+                        </div>
+                    </label>
+                </li>
+                <li class="soft-item">
+                    <label class="soft-item__wrapper">
+                        <div class="soft-container">
+                            Ремонт мониторов
+                        </div>
+                        <div class="soft-container">
+                            <input class="icon-arrow icon--arrow" type="button">
+                        </div>
+                    </label>
+                </li>
+            </ul>
+            <div class="soft--button-full-discription">
+                <button class="button--full-discription">
+                    Показать всё
+                </button>
             </div>
-            <div class="table__list">
-                <div class="item-point--wrapper item--height">Замена дисплея</div>
-                <div class="item-point--wrapper item--height">1 000 ₽</div>
-                <div class="item-point--wrapper item--height">30-120 мин</div>
-                <div class="item-point--wrapper item--height">
-                    <button class="price--order">заказать</button>
+        </div>
+        <div class="by-price">
+            <header class="by-price__header">
+                <p>цены на услуги</p>
+            </header>
+            <div class="price-table">
+                <div class="table__point">
+                    <div class="item-point--wrapper">
+                        <p class="item-point item--color">Ремонтные услуги</p>
+                    </div>
+                    <div class="item-point--wrapper">
+                        <p class="item-point item--color">Цена</p>
+                    </div>
+                    <div class="item-point--wrapper item--color">
+                        <p class="item-point">Срок</p>
+                    </div>
+                    <div class="item-point--wrapper item--color"></div>
                 </div>
-            </div>
-            <div class="table__list">
-                <div class="item-point--wrapper item--height">Замена полифонического динамика</div>
-                <div class="item-point--wrapper item--height">1 000 ₽</div>
-                <div class="item-point--wrapper item--height">30-120 мин</div>
-                <div class="item-point--wrapper item--height">
-                    <button class="price--order">заказать</button>
+                <div class="table__list">
+                    <div class="item-point--wrapper item--height">Диагностика</div>
+                    <div class="item-point--wrapper item--height">Бесплатно</div>
+                    <div class="item-point--wrapper item--height">30 мин</div>
+                    <div class="item-point--wrapper item--height">
+                        <button class="price--order">заказать</button>
+                    </div>
                 </div>
-            </div>
-            <div class="table__list">
-                <div class="item-point--wrapper item--height">Тестирование с выдачей технического заключения</div>
-                <div class="item-point--wrapper item--height">1 000 ₽</div>
-                <div class="item-point--wrapper item--height">30-120 мин</div>
-                <div class="item-point--wrapper item--height">
-                    <button class="price--order">заказать</button>
+                <div class="table__list">
+                    <div class="item-point--wrapper item--height">Замена дисплея</div>
+                    <div class="item-point--wrapper item--height">1 000 ₽</div>
+                    <div class="item-point--wrapper item--height">30-120 мин</div>
+                    <div class="item-point--wrapper item--height">
+                        <button class="price--order">заказать</button>
+                    </div>
                 </div>
-            </div>
-            <div class="table__list">
-                <div class="item-point--wrapper item--height">Замена программного обеспечения</div>
-                <div class="item-point--wrapper item--height">1 000 ₽</div>
-                <div class="item-point--wrapper item--height">30-120 мин</div>
-                <div class="item-point--wrapper item--height">
-                    <button class="price--order">заказать</button>
+                <div class="table__list">
+                    <div class="item-point--wrapper item--height">Замена полифонического динамика</div>
+                    <div class="item-point--wrapper item--height">1 000 ₽</div>
+                    <div class="item-point--wrapper item--height">30-120 мин</div>
+                    <div class="item-point--wrapper item--height">
+                        <button class="price--order">заказать</button>
+                    </div>
+                </div>
+                <div class="table__list">
+                    <div class="item-point--wrapper item--height">Тестирование с выдачей технического заключения</div>
+                    <div class="item-point--wrapper item--height">1 000 ₽</div>
+                    <div class="item-point--wrapper item--height">30-120 мин</div>
+                    <div class="item-point--wrapper item--height">
+                        <button class="price--order">заказать</button>
+                    </div>
+                </div>
+                <div class="table__list">
+                    <div class="item-point--wrapper item--height">Замена программного обеспечения</div>
+                    <div class="item-point--wrapper item--height">1 000 ₽</div>
+                    <div class="item-point--wrapper item--height">30-120 мин</div>
+                    <div class="item-point--wrapper item--height">
+                        <button class="price--order">заказать</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="by-own">
+            <section class="by-price-own">
+                Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения
+                коммерческого
+                предложения на
+                постоянное обслуживание, оставьте заявку.
+            </section>
+            <a class="price-own__button">
+                Получить коммерческое предложение
+            </a>
+        </div>
+        <footer class="footer">
+            <section class="licence licence--pos">
+                © 2019 CPS<br>
+                Разработано командой Apesong
+            </section>
+            <section class="licence licence--pos">
+                Политика конфиденциальности
+            </section>
+            <section class="licence licence--pos">
+                Информация, размещенная на данной странице,<br> не является публичной офертой
+            </section>
+        </footer>
     </div>
-    <section class="by-price-own">
-        Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на
-        постоянное обслуживание, оставьте заявку.
-    </section>
-    <a class="price-own__button">
-        Получить коммерческое предложение
-    </a>
-    <footer class="footer">
-        <section class="licence">
-            © 2019 CPS<br>
-            Разработано командой Apesong
-        </section>
-        <section class="licence">
-            Политика конфиденциальности
-        </section>
-        <section class="licence">
-            Информация, размещенная на данной странице,<br> не является публичной офертой
-        </section>
-    </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
