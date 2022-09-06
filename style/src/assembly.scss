@@ -1,4 +1,3 @@
-
 @import '../components/var/var';
 @import '../components/mixin/resetMarginH1';
 @import '../components/mixin/flex';
@@ -12,6 +11,7 @@
 @import './byPriceOwn';
 @import './footer';
 @import './menu';
+@import './modalFeedback';
 
 @font-face {
     font-family: 'TT Lakes-Bold';
@@ -36,4 +36,14 @@ body {
 
 .wrapper-right-main {
     width: 100vw;
+}
+
+.wrapper-right-modal {
+    width: 512px;
+    display: flex;
+    border-left: 0.5px solid #eaeaea;
+    position: fixed;
+    left: 100%;
+    transform: translate(0px);
+    transition: transform 1.5s;
 }

@@ -1,0 +1,59 @@
+.modal-feedback {
+    display: block;
+    position: relative;
+    background-color: #ffffff;
+    width: 440px;
+    height: 100vh;
+}
+
+.icon-burger-cancel.icon--decor.icon-modal-cancel {
+    display: block;
+}
+
+.modal-feedback-cancel {
+    display: block;
+    background-color: #ffffff;
+    width: 72px;
+    height: 100vh;
+}
+
+.modal__header {
+    margin-top: 40px;
+}
+
+.is-header.is-header--modal {
+    font-size: 24px;
+
+    &::before {
+        @media (min-width: 1439.98px) {
+            margin-right: 14px;
+
+        }
+    }
+
+}
+
+.form-feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-form {
+    font-family: 'TT Lakes-Medium';
+    font-size: 16px;
+    width: 376px;
+    height: 48px;
+    margin: 0 16px 16px 16px;
+    border-radius: 10px;
+    border: 1px solid #EAEAEA;
+    padding-left: 16px;
+}
+
+.place-form--send {
+    height: 118px;
+    padding-top: 12px;
+}
+
+.place-form::placeholder {
+    color: #B5B6BC;
+}
