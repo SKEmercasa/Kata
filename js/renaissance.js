@@ -22,7 +22,7 @@ burgerCancel.addEventListener('click', () => {
     menu.style.transform = 'translate(-100vw)';
 });
 
-call.addEventListener('click', () => {
+chat.addEventListener('click', () => {
     tel.style.display = 'none';
     feedback.style.transform = 'translate(-512px)';
     feed.style.display = 'flex';
@@ -32,7 +32,7 @@ call.addEventListener('click', () => {
     }
 });
 
-chat.addEventListener('click', () => {
+call.addEventListener('click', () => {
     feed.style.display = 'none';
     feedback.style.transform = 'translate(-512px)';
     tel.style.display = 'flex';
