@@ -7,7 +7,7 @@
     }
 
     & {
-        nav:first-child {
+        header:first-child {
             width: $width-header;
             @include flex($flex, $just-con);
 
@@ -20,7 +20,7 @@
             }
         }
 
-        nav:nth-child(2) {
+        header:nth-child(2) {
             width: $width-header;
             @include flex($flex: flex, $just-con: right);
 
@@ -29,7 +29,7 @@
             }
         }
 
-        nav:nth-child(3) {
+        header:nth-child(3) {
             width: 138px;
             @include flex($flex: flex, $just-con: right);
 
@@ -38,7 +38,7 @@
             }
         }
 
-        nav {
+        header {
             .decorative-imitation-separator {
                 height: 31px;
                 border-bottom: 0;

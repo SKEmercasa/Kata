@@ -4,17 +4,20 @@
     background-color: #ffffff;
     width: 440px;
     height: 100vh;
+    border-left: 0.5px solid #eaeaea;
 }
 
 .icon-burger-cancel.icon--decor.icon-modal-cancel {
     display: block;
+    margin-top: 36px;
+    margin-right: 32px;
 }
 
 .modal-feedback-cancel {
     display: block;
-    background-color: #ffffff;
     width: 72px;
     height: 100vh;
+
 }
 
 .modal__header {
@@ -23,6 +26,7 @@
 
 .is-header.is-header--modal {
     font-size: 24px;
+    display: none;
 
     &::before {
         @media (min-width: 1439.98px) {
@@ -47,6 +51,9 @@
     border-radius: 10px;
     border: 1px solid #EAEAEA;
     padding-left: 16px;
+}
+.tel-form {
+    display: none;
 }
 
 .place-form--send {

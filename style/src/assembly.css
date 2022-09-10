@@ -56,45 +56,45 @@
     display: none;
   }
 }
-.header nav:first-child {
+.header header:first-child {
   width: calc(50% - 69px);
   display: flex;
   justify-content: left;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header nav:first-child {
+  .header header:first-child {
     width: 57vw;
   }
-  .header nav:first-child hr {
+  .header header:first-child hr {
     display: none;
   }
 }
-.header nav:nth-child(2) {
+.header header:nth-child(2) {
   width: calc(50% - 69px);
   display: flex;
   justify-content: right;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header nav:nth-child(2) {
+  .header header:nth-child(2) {
     display: none;
     justify-content: right;
     align-items: center;
   }
 }
-.header nav:nth-child(3) {
+.header header:nth-child(3) {
   width: 138px;
   display: flex;
   justify-content: right;
   align-items: center;
 }
 @media (max-width: 767.98px) {
-  .header nav:nth-child(3) {
+  .header header:nth-child(3) {
     width: 43vw;
   }
 }
-.header nav .decorative-imitation-separator {
+.header header .decorative-imitation-separator {
   height: 31px;
   border-bottom: 0;
   border-left: 0.5px solid gray;
@@ -302,6 +302,10 @@
   }
 }
 
+.exposition__discription--part-four {
+  display: none;
+}
+
 .exposition__signboard {
   margin: 16px 0 0 0;
 }
@@ -329,6 +333,7 @@
 
 .by-brend__header {
   font-family: "TT Lakes-Normal";
+  font-weight: normal;
   font-size: 16px;
   text-transform: uppercase;
   color: #7E7E82;
@@ -407,6 +412,10 @@
   .hidden--768 {
     display: flex;
   }
+}
+
+.hidden--1440 {
+  display: none;
 }
 
 .by-soft {
@@ -743,7 +752,7 @@
   min-height: 60vh;
 }
 
-.left-header {
+.left__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -850,15 +859,17 @@
   background-color: #ffffff;
   width: 440px;
   height: 100vh;
+  border-left: 0.5px solid #eaeaea;
 }
 
 .icon-burger-cancel.icon--decor.icon-modal-cancel {
   display: block;
+  margin-top: 36px;
+  margin-right: 32px;
 }
 
 .modal-feedback-cancel {
   display: block;
-  background-color: #ffffff;
   width: 72px;
   height: 100vh;
 }
@@ -869,6 +880,7 @@
 
 .is-header.is-header--modal {
   font-size: 24px;
+  display: none;
 }
 @media (min-width: 1439.98px) {
   .is-header.is-header--modal::before {
@@ -890,6 +902,10 @@
   border-radius: 10px;
   border: 1px solid #EAEAEA;
   padding-left: 16px;
+}
+
+.tel-form {
+  display: none;
 }
 
 .place-form--send {
@@ -934,7 +950,6 @@ body {
 .wrapper-right-modal {
   width: 512px;
   display: flex;
-  border-left: 0.5px solid #eaeaea;
   position: fixed;
   left: 100%;
   transform: translate(0px);

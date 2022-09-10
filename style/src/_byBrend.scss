@@ -10,6 +10,7 @@
 
 .by-brend__header {
     font-family: 'TT Lakes-Normal';
+    font-weight: normal;
     font-size: 16px;
     text-transform: uppercase;
     color: #7E7E82;
@@ -82,4 +83,8 @@
     @media (min-width: 1584px) {
         display: flex;
     }
+}
+
+.hidden--1440 {
+    display: none;
 }

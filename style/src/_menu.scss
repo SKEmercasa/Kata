@@ -43,7 +43,7 @@
     min-height: 60vh;
 }
 
-.left-header {
+.left__header {
     @include flex($flex, $just-con: space-between);
 }
 
