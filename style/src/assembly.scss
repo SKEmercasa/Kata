@@ -33,16 +33,22 @@ body {
     background-color: #f8f8f8;
     display: flex;
 }
+.wrapper-left-main {
+    z-index: 5;
+}
 
 .wrapper-right-main {
+    z-index: 2;
     width: 100vw;
+    transition: 1.5s;
 }
 
 .wrapper-right-modal {
+    z-index: 5;
     width: 512px;
     display: flex;
     position: fixed;
     left: 100%;
     transform: translate(0px);
-    transition: transform 1.5s;
+    transition: 1.5s;
 }

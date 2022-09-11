@@ -49,17 +49,17 @@
                         <a class="panel__link tel--link" href="tel: +8 800 890 8900">8 800 890 8900</a>
                     </section>
                 </div>
-                <div class="language-bar list--normal">
-                    <button class="language-bar__item language-bar__item--active">
-                        RU
-                    </button>
-                    <button class="language-bar__item">
-                        EN
-                    </button>
-                    <button class="language-bar__item">
-                        CH
-                    </button>
-                </div>
+                <ul class="language-bar list--normal">
+                    <li>
+                        <button class="language-bar__item language-bar__item--active">RU</button>
+                    </li>
+                    <li>
+                        <button class="language-bar__item">EN</button>
+                    </li>
+                    <li>
+                        <button class="language-bar__item">CH</button>
+                    </li>
+                </ul>
             </footer>
         </div>
     </div>
@@ -71,8 +71,8 @@
                 <img class="logo-CPS" src="./img/logo.svg" alt="logo">
             </header>
             <header class="header__nav">
-                <button class="icon-call icon--decor"></button>
-                <button class="icon-chat icon--decor"></button>
+                <button class="icon-call icon--decor callJs"></button>
+                <button class="icon-chat icon--decor chatJs"></button>
                 <button class="icon-profile icon--decor"></button>
             </header>
             <header class="header__nav">
@@ -161,7 +161,7 @@
                 </div>
             </article>
         </div>
-        <div class="by-brend">
+        <section class="by-brend">
             <h1 class="by-brend__header">
                 Ремонт техники различных брендов
             </h1>
@@ -256,8 +256,8 @@
                     Показать всё
                 </button>
             </div>
-        </div>
-        <div class="by-soft">
+        </section>
+        <section class="by-soft">
             <header class="by-soft__header">
                 Ремонт различных видов техники
             </header>
@@ -308,11 +308,11 @@
                     Показать всё
                 </button>
             </div>
-        </div>
-        <div class="by-price">
-            <header class="by-price__header">
+        </section>
+        <section class="by-price">
+            <h1 class="by-price__header">
                 <p>цены на услуги</p>
-            </header>
+            </h1>
             <div class="price-table">
                 <div class="table__point">
                     <div class="item-point--wrapper">
@@ -351,7 +351,8 @@
                     </div>
                 </div>
                 <div class="table__list">
-                    <div class="item-point--wrapper item--height">Тестирование с выдачей технического заключения</div>
+                    <div class="item-point--wrapper item--height">Тестирование с выдачей технического заключения
+                    </div>
                     <div class="item-point--wrapper item--height">1 000 ₽</div>
                     <div class="item-point--wrapper item--height">30-120 мин</div>
                     <div class="item-point--wrapper item--height">
@@ -367,29 +368,29 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="by-own">
-            <section class="by-price-own">
+        </section>
+        <section class="by-own">
+            <div class="by-price-own">
                 Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения
                 коммерческого
                 предложения на
                 постоянное обслуживание, оставьте заявку.
-            </section>
+            </div>
             <a class="price-own__button">
                 Получить коммерческое предложение
             </a>
-        </div>
+        </section>
         <footer class="footer">
-            <section class="licence licence--pos">
+            <div class="licence licence--pos">
                 © 2019 CPS<br>
                 Разработано командой Apesong
-            </section>
-            <section class="licence licence--pos">
+            </div>
+            <div class="licence licence--pos">
                 Политика конфиденциальности
-            </section>
-            <section class="licence licence--pos">
+            </div>
+            <div class="licence licence--pos">
                 Информация, размещенная на данной странице,<br> не является публичной офертой
-            </section>
+            </div>
         </footer>
     </div>
     <div class="wrapper-right-modal">
@@ -406,10 +407,14 @@
                 <input class="place-form" type="tel" placeholder="Телефон" name="tel">
                 <input class="place-form tel-form" type="email" placeholder="Электронная почта" name="email">
                 <textarea class="place-form place-form--send  tel-form" name="send" placeholder="Сообщение"></textarea>
-                <div>Нажимая “отправить”, вы даете согласие на обработку персональных данных и соглашаетесь с нашей
-                    политикой
-                    конфиденциальности</div>
-                <button type="submit">Отправить</button>
+                <div class="send-link">Нажимая “отправить”, вы даете согласие на <a class="link--data"
+                        href="*">обработку персональных данных</a> и соглашаетесь с нашей<a class="link--data" href="*">
+                        политикой
+                        конфиденциальности</a>
+                </div>
+                <div class="form-button__wrapper">
+                    <button class="price--order" type="submit">Отправить</button>
+                </div>
             </form>
         </div>
     </div>

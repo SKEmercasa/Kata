@@ -529,6 +529,7 @@
 .by-price__header {
   font-family: "TT Lakes-Normal";
   font-size: 16px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #7E7E82;
   margin-bottom: 32px;
@@ -707,6 +708,7 @@
   top: 0;
   width: 100vw;
   transition: transform 1.5s;
+  transition: 1.5s;
   z-index: 1;
 }
 @media (max-width: 767.98px) {
@@ -891,14 +893,15 @@
 .form-feedback {
   display: flex;
   flex-direction: column;
+  align-items: end;
 }
 
 .place-form {
   font-family: "TT Lakes-Medium";
   font-size: 16px;
-  width: 376px;
+  width: 388px;
   height: 48px;
-  margin: 0 16px 16px 16px;
+  margin: 0 auto 16px auto;
   border-radius: 10px;
   border: 1px solid #EAEAEA;
   padding-left: 16px;
@@ -925,6 +928,24 @@
   color: #B5B6BC;
 }
 
+.send-link {
+  font-size: 14px;
+  font-family: "TT Lakes-Medium";
+  color: #7E7E82;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.link--data {
+  color: #FF3E79;
+  text-decoration: none;
+}
+
+.form-button__wrapper {
+  margin-right: 16px;
+}
+
 @font-face {
   font-family: "TT Lakes-Bold";
   src: url(../../font/TTLakes-Bold.ttf);
@@ -943,15 +964,22 @@ body {
   display: flex;
 }
 
+.wrapper-left-main {
+  z-index: 5;
+}
+
 .wrapper-right-main {
+  z-index: 2;
   width: 100vw;
+  transition: 1.5s;
 }
 
 .wrapper-right-modal {
+  z-index: 5;
   width: 512px;
   display: flex;
   position: fixed;
   left: 100%;
   transform: translate(0px);
-  transition: transform 1.5s;
+  transition: 1.5s;
 }/*# sourceMappingURL=assembly.css.map */

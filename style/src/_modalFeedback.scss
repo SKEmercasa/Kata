@@ -40,14 +40,15 @@
 .form-feedback {
     display: flex;
     flex-direction: column;
+    align-items: end;
 }
 
 .place-form {
     font-family: 'TT Lakes-Medium';
     font-size: 16px;
-    width: 376px;
+    width: 388px;
     height: 48px;
-    margin: 0 16px 16px 16px;
+    margin: 0 auto 16px auto;
     border-radius: 10px;
     border: 1px solid #EAEAEA;
     padding-left: 16px;
@@ -63,4 +64,22 @@
 
 .place-form::placeholder {
     color: #B5B6BC;
+}
+
+.send-link {
+    font-size: 14px;
+    font-family: 'TT Lakes-Medium';
+    color: #7E7E82;
+    margin-left: $margin16;
+    margin-right: $margin16;
+    margin-bottom: $margin16;
+}
+
+.link--data {
+    color: #FF3E79;
+    text-decoration: none;
+}
+
+.form-button__wrapper {
+    margin-right: $margin16;
 }
