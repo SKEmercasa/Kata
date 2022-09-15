@@ -19,6 +19,7 @@ const
     h = window.innerWidth,
     bgModal = document.querySelector('.wrapper-right-main');
 console.log(h);
+
 bgModal.addEventListener('click', e => {
     if (e) {
         if (e.target != burger) {
@@ -57,7 +58,11 @@ for (let i = 0; i < chat.length; i++) {
     const el = chat[i];
     el.addEventListener('click', () => {
         tel.style.display = 'none';
-        feedback.style.transform = 'translate(-512px)';
+        if (h < 767.98) {
+            feedback.style.transform = 'translate(-100vw)';
+        } else {
+            feedback.style.transform = 'translate(-512px)';
+        }
         feed.style.display = 'flex';
         for (let i = 0; i < telPlaces.length; i++) {
             const el = telPlaces[i];
@@ -76,7 +81,11 @@ for (let i = 0; i < call.length; i++) {
     const el = call[i];
     el.addEventListener('click', () => {
         feed.style.display = 'none';
-        feedback.style.transform = 'translate(-512px)';
+        if (h < 767.98) {
+            feedback.style.transform = 'translate(-100vw)';
+        } else {
+            feedback.style.transform = 'translate(-512px)';
+        }
         tel.style.display = 'flex';
         for (let i = 0; i < telPlaces.length; i++) {
             const el = telPlaces[i];

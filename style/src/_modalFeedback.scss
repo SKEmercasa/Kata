@@ -1,10 +1,14 @@
 .modal-feedback {
     display: block;
-    position: relative;
     background-color: #ffffff;
     width: 440px;
     height: 100vh;
     border-left: 0.5px solid #eaeaea;
+
+    @media (max-width: 767.98px) {
+        width: 100vw;
+        height: 95vh;
+    }
 }
 
 .icon-burger-cancel.icon--decor.icon-modal-cancel {
@@ -18,10 +22,19 @@
     width: 72px;
     height: 100vh;
 
+    @media (max-width: 767.98px) {
+        width: auto;
+        height: 5vh;
+    }
+
 }
 
 .modal__header {
     margin-top: 40px;
+
+    @media (max-width: 767.98px) {
+    margin-top: 24px;
+    }
 }
 
 .is-header.is-header--modal {
@@ -41,6 +54,11 @@
     display: flex;
     flex-direction: column;
     align-items: end;
+
+    @media (max-width: 767.98px) {
+            align-items: flex-start;
+            width: 100vw;
+        }
 }
 
 .place-form {
@@ -52,7 +70,14 @@
     border-radius: 10px;
     border: 1px solid #EAEAEA;
     padding-left: 16px;
+
+    @media (max-width: 767.98px) {
+        width: calc(100vw - 52px);
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
+
 .tel-form {
     display: none;
 }
@@ -82,4 +107,6 @@
 
 .form-button__wrapper {
     margin-right: $margin16;
+
+    align-self: end;
 }
