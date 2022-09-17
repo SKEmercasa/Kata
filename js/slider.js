@@ -1,7 +1,7 @@
 const brandList = document.querySelectorAll('.brend-item');
 const itemWrapper = document.querySelector('.item__wrapper');
+const listSlider = document.querySelector('.by-brend__list');
 const crs = document.querySelectorAll('.crs');
-const list = document.querySelector('.by-brend__list');
 const Slider = (el) => {
 
     for (let i = 0; i < el.length; i++) {
@@ -17,9 +17,22 @@ const Slider = (el) => {
 Slider(brandList);
 
 itemWrapper.addEventListener('click', e => {
+    let he = null;
     let crs = document.querySelectorAll('.crs');
     let ctn = e.target.classList[0];
-    list.style.transform = 'translate(-250px)';
+    if (ctn == "crs") {
+        for (let i = 0; i < crs.length; i++) {
+            let is = crs[i].classList.contains("crs--active");
+            if (e.target == crs[i]) {
+                he = i;
+            }
+            if (is == true) {
+                crs[i].classList.remove("crs--active");
+            }
+        }
+        listSlider.style.transform = `translate(calc(-250px * ${he}))`;
+        e.target.classList.add("crs--active");
+    }
 })
 
 

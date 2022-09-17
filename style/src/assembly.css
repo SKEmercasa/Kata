@@ -353,7 +353,7 @@
   justify-content: left;
   align-items: center;
   flex-wrap: wrap;
-  transition: 0.4s;
+  transition: 1s;
 }
 @media (min-width: 1440px) {
   .by-brend__list {
