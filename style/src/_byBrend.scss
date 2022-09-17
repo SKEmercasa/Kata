@@ -106,13 +106,18 @@
         display: none;
     }
 }
+.item__wrapper {
+    @media (min-width: 767.98px) {
+            display: none;
+        }
+}
 
 .item-pagination {
     display: flex;
     justify-content: center;
 }
 
-.crs {
+.crsitem__wrapper {
     margin: 3px;
     width: 12px;
     height: 12px;
